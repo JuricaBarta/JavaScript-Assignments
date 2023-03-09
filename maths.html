@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mathematical Shapes</title>
+</head>
+<body>
+  <script>
+    // a) diagonal of square
+    const sideLength = 9;
+    const diagonal = Math.sqrt(2 * sideLength ** 2).toFixed(2);
+    console.log(`The diagonal of the square is ${diagonal}`);
+
+    // b) area of triangle
+    const firstSide = 5;
+    const secondSide = 6;
+    const thirdSide = 7;
+    const s = (firstSide + secondSide + thirdSide) / 2;  // s stands for semiperimeter
+    const area = Math.sqrt(s * (s - firstSide) * (s - secondSide) * (s - thirdSide)).toFixed(2);
+    console.log(`The are of the triangle is ${area}`);
+
+    // c) circumference and surface area of a circle
+    const radius = 4;
+    const pi = Math.PI;
+    const circumference = 2 * pi * radius;
+    const surfaceArea = pi * radius ** 2;
+    console.log(`The circumference of the circle is ${circumference.toFixed(2)}`);
+    console.log(`The surface area of the circle is ${surfaceArea.toFixed(2)}`);
+  </script>
+ 
+</body>
+</html>
